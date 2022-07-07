@@ -11,5 +11,6 @@
 (load "pm.el")
 (load "shortcuts.el")
 (load "epitech.el")
+(load "backup.el")
 
 (setq auto-save-default nil)
