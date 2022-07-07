@@ -117,3 +117,4 @@
 ;;
 ;; M-p : will go to the command history one command by one command as UP_ARROW would behave.
 ;;
+;; M-! : will prompt for a shell command and only one.
