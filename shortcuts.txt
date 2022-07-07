@@ -110,8 +110,10 @@
 ;; C-x 0
 ;; (M-w)
 ;;
-;; POPING THE SHELL
+;; USING THE SHELL
 ;;
 ;; M-x : will prompt for the command, type `shell`
 ;; (M-j)
+;;
+;; M-p : will go to the command history one command by one command as UP_ARROW would behave.
 ;;
