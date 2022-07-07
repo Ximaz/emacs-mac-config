@@ -83,3 +83,6 @@
 (use-package all-the-icons-dired
   :if (display-graphic-p)
   :hook (dired-mode . all-the-icons-dired-mode))
+
+(use-package magit
+  :custom (magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1))
