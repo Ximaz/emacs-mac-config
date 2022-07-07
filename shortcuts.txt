@@ -110,3 +110,8 @@
 ;; C-x 0
 ;; (M-w)
 ;;
+;; POPING THE SHELL
+;;
+;; M-x : will prompt for the command, type `shell`
+;; (M-j)
+;;
