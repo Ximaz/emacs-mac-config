@@ -12,7 +12,7 @@
   "This function will, once called, pop a shell to a new bottom window."
   (interactive)
   (if (buffer-exists "*shell*")
-      (kill-buffer "*shell*"))
+      (delete-windows-on "*shell*"))
   (let ((w (split-window-below 2)))
     (select-window w)
         (shell))
