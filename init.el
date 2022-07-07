@@ -26,7 +26,7 @@
  '(cua-mode t nil (cua-base))
  '(custom-enabled-themes '(misterioso))
  '(package-selected-packages
-   '(ivy-rich which-key rainbow-delimiters use-package doom-modeline counsel command-log-mode))
+   '(helpful ivy-rich which-key rainbow-delimiters use-package doom-modeline counsel command-log-mode))
  '(show-paren-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
