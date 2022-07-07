@@ -7,5 +7,21 @@ The most important shortcuts to know are located into the `shortcuts.txt` file. 
 ## The UI
 The UI got a lil bit reworked to make it tiner and friendly as most as possible. This project will continue to get modifications to tend to get the most friendly usable configuration.
 
-## EPITECH's plugin
+## The EPITECH's plugin
 The EPITECH's plugin is also included into the `lisp` folder and no binding was redifined about this one, since they are pretty usable, excepted for the `fn` key. The `fn` key, when used with the delete key, is supposed to delete forward characters. The EPITECH's plugin re-binds this key and it's very frustrating. However, this project doesn't contain the re-binding part, so the `fn` key works as it should.
+
+## Setup
+### Downloading
+To setup this configuration, you have to download this repo, or clone it if you are already familiar with it. Then, if you downloaded from the GitHub's website, you will have to extract the content of the archive.
+
+### Installing
+Get into the repository's folder and find the `init.el`. Move it to your `.emacs` folder which should be located at `~/.emacs/`. Repeat the same operation with the `lisp` folder. You should have something similar to this :
+```
+~/.emacs/
+    init.el
+    lisp/
+        other_el_files.el
+```
+
+### Ready to go
+You can now start Emacs and use the new cool shortcuts !
