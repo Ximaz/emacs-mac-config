@@ -19,5 +19,6 @@
 ;; Disable line numbers for some modes.
 (dolist (mode '(ord-mode-hook
                 term-mode-hook
+                shell-mode-hook
                 eshell-mode-hook))
   (add-hook mode (lambda () (display-line-numbers-mode 0))))
