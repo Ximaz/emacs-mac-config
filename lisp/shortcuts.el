@@ -13,10 +13,13 @@
   (interactive)
   (if (buffer-exists "*shell*")
       (delete-windows-on "*shell*"))
-  (let ((w (split-window-below 2)))
-    (select-window w)
-        (shell))
-  (switch-to-buffer w))
+  ;; (let ((w (split-window-below 28)))
+  ;;   (select-window w)
+  ;;       (shell))
+  ;; (switch-to-buffer w)
+  (split-window-below -8)
+  (select-window (next-window))
+  (shell))
 
 
 ;; Define keyboard shortcuts
