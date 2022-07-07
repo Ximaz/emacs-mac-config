@@ -15,9 +15,9 @@ The EPITECH's plugin is also included into the `lisp` folder and no binding was 
 To setup this configuration, you have to download this repo, or clone it if you are already familiar with it. Then, if you downloaded from the GitHub's website, you will have to extract the content of the archive.
 
 ### Installing
-Get into the repository's folder and find the `init.el`. Move it to your `.emacs` folder which should be located at `~/.emacs/`. Repeat the same operation with the `lisp` folder. You should have something similar to this :
+Get into the repository's folder and find the `init.el`. Move it to your `.emacs.d` folder which should be located at `~/.emacs.d/`. Repeat the same operation with the `lisp` folder. You should have something similar to this :
 ```
-~/.emacs/
+~/.emacs.d/
     init.el
     lisp/
         other_el_files.el
