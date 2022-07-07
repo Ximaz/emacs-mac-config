@@ -49,3 +49,13 @@
   :diminish which-key-mode
   :config
   (setq which-key-idle-delay 0.3))
+
+(use-package ivy-rich
+  :init (ivy-rich-mode 1))
+
+(use-package counsel
+  :bind (("M-x" . counsel-M-x)
+         ("C-x b" . counsel-ibuffer)
+         :map minibuffer-local-map
+         ("C-r" . counsel-minibuffer-history))
+  :config (setq ivy-initial-inputs-alist nil))
