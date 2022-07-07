@@ -1,0 +1,112 @@
+;; EMACS MEMO
+;;
+;; This file will contains many shortcuts that are useful to know when you use
+;; emacs. Some of them were declared locally, so they might not be compatible
+;; with other emacs version or computers.
+;;
+;; Vocabulary :
+;; M-<char>   : the M- key can be called either using the <ESC> or <Cmd> key.
+;; (M-<char>) : mark the M-<char> shortcut as user-defined (custom).
+;; C-<char>   : The C- key can be called using the <CTRL> key.
+;;
+;; Executing an emacs command :
+;; M-x <command-name>
+;;
+;; Opening a buffer that was already opened somehow :
+;; C-x b (M-p) : will prompt for the buffer's name.
+;;
+;; Opening a file or a folder into a buffer :
+;; C-x C-f (M-o) : will prompt for the file/folder's path.
+;;
+;; Adding an Epitech header at the top of a file :
+;; C-c C-h : will prompt for the filename and it's description.
+;;
+;; Saving a buffer :
+;; C-x C-s : may prompt for the path to save the content into.
+;;
+;; Listing all buffers :
+;; C-x C-b
+;;
+;; Saving the buffer "as" :
+;; C-x C-w : may prompt for the path to save as the content into.
+;; This command will switch buffers file to the one just saved as the one
+;; getting currently edited.
+;;
+;; Navigate through buffers :
+;; C-x left|right
+;;
+;; Cut a region :
+;; C-c C-w : the region can be selected by mouse, or using shift + navigate into
+;;           the buffer.
+;;
+;; Cut an entire line :
+;; C-k
+;; C-shift-<DEL>
+;;
+;; Paste test :
+;; C-y : paste the text of the clipboard where the cursor points to.
+;; C-c C-v : another shortcut that do the same as C-y.
+;;
+;; Undo :
+;; C-_ (C-<shift+'-'>)
+;; C-x C-u
+;; (M-z)
+;;
+;; Redo :
+;; C-g C-_
+;; C-M-_
+;; (M-y)
+;;
+;; Repeat the latest executed command :
+;; C-x z jiop jio
+;;
+;; Killing the current buffer (do not close emacs) :
+;; C-x k : will prompt for the buffer's name, taking the
+;;         one where the command was typed, by default.
+;;
+;; Exiting emacs in a proper way :
+;; C-x C-c
+;;
+;; Cancel a current command execution (while getting prompt) :
+;; C-g
+;;
+;; Get current bindings list :
+;; M-x describe-bindings
+;;
+;; ZOOMING FEATURES :
+;;
+;; To zoom in :
+;; C-x C-+ (C-x C-<shift+'+')
+;;
+;; To zoom out :
+;; C-x C--
+;;
+;; SEARCHING PATTERNS :
+;;
+;; To search for a matching string :
+;; M-s o : will prompt for the regex.
+;;
+;; MOVING AROUND A BUFFER :
+;;
+;; Going to a line :
+;; M-g g : will prompt for the line.
+;; M-g M-g : same as M-g g
+;;
+;; Going to the beginning of the line :
+;; C-a
+;;
+;; Going to the end of the line :
+;; C-e
+;;
+;; Going up to a line :
+;; C-p
+;;
+;; Going down to a line :
+;; C-n
+;;
+;; WINDOW MANAGEMENT
+;;
+;; Delete the current window :
+;; C-x 0
+;; (M-w)
+;;
