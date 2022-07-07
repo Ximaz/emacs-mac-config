@@ -5,13 +5,17 @@
 ;; global emacs configuration
 ;;
 
+(defun buffer-exists (bufname) (not (eq nil (get-buffer bufname))))
+
 ;; Some function that will get binded to keys
 (defun pop-the-shell ()
   "This function will, once called, pop a shell to a new bottom window."
   (interactive)
+  (if (buffer-exists "*shell*")
+      (kill-buffer "*shell*"))
   (let ((w (split-window-below 2)))
     (select-window w)
-    (shell))
+        (shell))
   (switch-to-buffer w))
 
 
