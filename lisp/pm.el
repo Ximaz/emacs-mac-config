@@ -57,6 +57,7 @@
   :bind (("M-x" . counsel-M-x)
          ("C-x b" . counsel-ibuffer)
          ("C-x C-f" . counsel-find-file)
+         ("M-p" . counsel-switch-buffer)
          :map minibuffer-local-map
          ("C-r" . counsel-minibuffer-history)))
 
@@ -71,3 +72,14 @@
   ([remap describe-key] . helpful-key))
 
 (use-package sublime-themes)
+
+(use-package all-the-icons
+  :if (display-graphic-p)
+  :commands all-the-icons-install-fonts
+  :init
+  (unless (find-font (font-spec :name "all-the-icons"))
+    (all-the-icons-install-fonts t)))
+
+(use-package all-the-icons-dired
+  :if (display-graphic-p)
+  :hook (dired-mode . all-the-icons-dired-mode))

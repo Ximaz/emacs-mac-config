@@ -28,7 +28,7 @@
  '(custom-safe-themes
    '("9b59e147dbbde5e638ea1cde5ec0a358d5f269d27bd2b893a0947c4a867e14c1" default))
  '(package-selected-packages
-   '(sublime-themes helpful ivy-rich which-key rainbow-delimiters use-package doom-modeline counsel command-log-mode))
+   '(all-the-icons-dired all-the-icons sublime-themes helpful ivy-rich which-key rainbow-delimiters use-package doom-modeline counsel command-log-mode))
  '(show-paren-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
