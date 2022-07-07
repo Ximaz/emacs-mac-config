@@ -7,9 +7,6 @@
 (tooltip-mode -1)    ; Disable the tooltips.
 (set-fringe-mode 10) ; Give some breathing room.
 
-;; (setq visible-bell t)
-(load-theme 'wombat)
-
 (load "font.el")
 
 ;; Adds line numbers at the left of the buffer.
@@ -22,3 +19,6 @@
                 shell-mode-hook
                 eshell-mode-hook))
   (add-hook mode (lambda () (display-line-numbers-mode 0))))
+
+;; Require the sublim-theme package to be installed.
+(load-theme 'brin t)
