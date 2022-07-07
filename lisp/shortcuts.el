@@ -11,15 +11,22 @@
 (defun pop-the-shell ()
   "This function will, once called, pop a shell to a new bottom window."
   (interactive)
-  (if (buffer-exists "*shell*")
-      (delete-windows-on "*shell*"))
+  (if (buffer-exists "*eshell*")
+      (delete-windows-on "*eshell*"))
   ;; (let ((w (split-window-below 28)))
   ;;   (select-window w)
   ;;       (shell))
   ;; (switch-to-buffer w)
   (split-window-below -8)
   (select-window (next-window))
-  (shell))
+  (eshell))
+
+(defun close-eshell-window ()
+  "This function will, once exit signal is sent to eshell, close all it's windows."
+  (if (buffer-exists "*eshell*")
+      (delete-windows-on "*eshell*")))
+
+(add-hook 'eshell-exit-hook #'close-eshell-window)
 
 
 ;; Define keyboard shortcuts
