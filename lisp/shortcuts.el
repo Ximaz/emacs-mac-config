@@ -5,22 +5,32 @@
 ;; global emacs configuration
 ;;
 
-(defun shell-exists () (not (eq nil (get-buffer "*eshell*"))))
+(defun shell-exists() (not (null (get-buffer "*eshell*"))))
+
+(defun build-the-shell()
+  (split-window-below -8)
+  (select-window (next-window))
+  (eshell))
+
+(defun kill-shell-windows()
+  (dolist (win (window-list))                                                                                  
+    (when (string= (buffer-name (window-buffer win)) "*eshell*")                                          
+      (delete-window win)                                                                                      
+      (kill-buffer "*eshell*"))))
 
 ;; Some function that will get binded to keys
 (defun pop-the-shell ()
   "This function will, once called, pop a shell to a new bottom window."
   (interactive)
-  (if (buffer-exists "*eshell*")
-      (delete-windows-on "*eshell*"))
-  (split-window-below -8)
-  (select-window (next-window))
-  (eshell))
+  (if (shell-exists)
+      (kill-shell-windows)
+    (build-the-shell)
+  ))
 
 (defun close-eshell-window ()
   "This function will, once exit signal is sent to eshell, close all it's windows."
-  (if (buffer-exists "*eshell*")
-      (delete-windows-on "*eshell*")))
+  (if (shell-exists)
+      (kill-shell-windows)))
 
 (add-hook 'eshell-exit-hook #'close-eshell-window)
 
