@@ -14,6 +14,14 @@ The EPITECH's plugin is also included into the `lisp` folder and no binding was 
 The backup feature has been reworked. To not pollute your EPITECH projects and repos, the bakcup file `*.*~` are getting redirected to this folder : `~/.emacs.d/backup`
 A versioning feature is used by Emacs itself to get many verison of the same file, which make a complete backup feature.
 
+## Wakatime
+The wakatime plugin tracks the time you're coding for. If you have an account on wakatime and an API key, then you may want to track your time using this plugin. It is already integrated to this configuration. However, you have to setup wakatime if not already done. To do so :
+```console
+brew install wakatime-cli # Will install the wakatime cli.
+which wakatime            # Will prompt the path where wakatime is located.
+```
+You will then have to edit the ELisp file located to `lisp/personal.el` where you will be able to fulfill informations such as your API key and the path where wakatime is located. Make sure to restart emacs and you should be ready to go !
+
 ## Setup
 ### Downloading
 To setup this configuration, you have to download this repo, or clone it if you are already familiar with it. Then, if you downloaded from the GitHub's website, you will have to extract the content of the archive.
