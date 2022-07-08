@@ -118,3 +118,14 @@
 ;; M-p : will go to the command history one command by one command as UP_ARROW would behave.
 ;;
 ;; M-! : will prompt for a shell command and only one.
+;;
+;; MULTI CURSOR
+;;
+;; Creating a line at the top of the current cursor :
+;; (M-C-<up>)
+;;
+;; Creating a line at the top of the current cursor :
+;; (M-C-<down>)
+;;
+;; Removing all created cursors :
+;; (<escape>)
