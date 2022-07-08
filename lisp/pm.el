@@ -140,5 +140,7 @@
          ("C-M-<down>" . mc/mark-next-like-this)
          ("M-C-<down>" . mc/mark-next-like-this)
          ("<escape>" . mc/keyboard-quit)
-         )
+         ("<mouse-1>" . mc/keyboard-quit)
+         ("M-S-<mouse-1>" . mc/toggle-cursor-on-click)
+         ))
 
