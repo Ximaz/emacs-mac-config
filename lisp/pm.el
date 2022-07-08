@@ -133,3 +133,12 @@
 
 (use-package visual-fill-column
   :hook (org-mode . efs/org-mode-visual-fill))
+
+(use-package multiple-cursors
+  :bind (("C-M-<up>" . mc/mark-previous-like-this)
+         ("M-C-<up>" . mc/mark-previous-like-this)
+         ("C-M-<down>" . mc/mark-next-like-this)
+         ("M-C-<down>" . mc/mark-next-like-this)
+         ("<escape>" . mc/keyboard-quit)
+         )
+

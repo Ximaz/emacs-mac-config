@@ -5,7 +5,7 @@
 ;; global emacs configuration
 ;;
 
-(defun buffer-exists (bufname) (not (eq nil (get-buffer bufname))))
+(defun shell-exists () (not (eq nil (get-buffer "*eshell*"))))
 
 ;; Some function that will get binded to keys
 (defun pop-the-shell ()
@@ -13,10 +13,6 @@
   (interactive)
   (if (buffer-exists "*eshell*")
       (delete-windows-on "*eshell*"))
-  ;; (let ((w (split-window-below 28)))
-  ;;   (select-window w)
-  ;;       (shell))
-  ;; (switch-to-buffer w)
   (split-window-below -8)
   (select-window (next-window))
   (eshell))
