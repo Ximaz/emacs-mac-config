@@ -129,6 +129,7 @@
 ;;
 ;; Removing all created cursors :
 ;; (<escape>)
+;; (<mouse-1>)
 ;;
 ;; Adding/removing the cursor where you clicked :
 ;; (M-<mouse-1>)
