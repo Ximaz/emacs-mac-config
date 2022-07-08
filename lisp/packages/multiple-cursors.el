@@ -1,0 +1,11 @@
+(require 'use-package)
+(setq use-package-always-ensure t)
+(use-package multiple-cursors
+  :bind (("C-M-<up>" . mc/mark-previous-like-this)
+         ("M-C-<up>" . mc/mark-previous-like-this)
+         ("C-M-<down>" . mc/mark-next-like-this)
+         ("M-C-<down>" . mc/mark-next-like-this)
+         ("<escape>" . mc/keyboard-quit)
+         ("<mouse-1>" . mc/keyboard-quit)
+         ("M-S-<mouse-1>" . mc/toggle-cursor-on-click)
+         ))
