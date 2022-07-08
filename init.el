@@ -26,9 +26,9 @@
  '(cua-mode t nil (cua-base))
  '(custom-enabled-themes '(brin))
  '(custom-safe-themes
-   '("9b59e147dbbde5e638ea1cde5ec0a358d5f269d27bd2b893a0947c4a867e14c1" default))
+   '("5f128efd37c6a87cd4ad8e8b7f2afaba425425524a68133ac0efd87291d05874" "7a424478cb77a96af2c0f50cfb4e2a88647b3ccca225f8c650ed45b7f50d9525" "9b59e147dbbde5e638ea1cde5ec0a358d5f269d27bd2b893a0947c4a867e14c1" default))
  '(package-selected-packages
-   '(multiple-cursors visual-fill-column org-bullets evil-collection magit evil-magit all-the-icons-dired all-the-icons sublime-themes helpful ivy-rich which-key rainbow-delimiters use-package doom-modeline counsel command-log-mode))
+   '(doom-themes multiple-cursors visual-fill-column org-bullets evil-collection magit evil-magit all-the-icons-dired all-the-icons sublime-themes helpful ivy-rich which-key rainbow-delimiters use-package doom-modeline counsel command-log-mode))
  '(show-paren-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

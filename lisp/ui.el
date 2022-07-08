@@ -23,5 +23,5 @@
                 eshell-mode-hook))
   (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
-;; Require the sublim-theme package to be installed.
-(load-theme 'brin t)
+(set-frame-parameter (selected-frame) 'alpha '80)
+(add-to-list 'default-frame-alist '(alpha . 80))

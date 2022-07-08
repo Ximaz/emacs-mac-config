@@ -41,6 +41,15 @@
   :init (doom-modeline-mode 1)
   :custom ((doom-modeline-height 15)))
 
+(use-package doom-themes
+  :ensure t
+  :config
+  (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+        doom-themes-enable-italic t) ; if nil, italics is universally disabled
+  (load-theme 'doom-palenight t)
+  (doom-themes-visual-bell-config)
+  )
+
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
 
@@ -70,8 +79,6 @@
   ([remap describe-command] . helpful-command)
   ([remap describe-variable] . counsel-describe-variable)
   ([remap describe-key] . helpful-key))
-
-(use-package sublime-themes)
 
 (use-package all-the-icons
   :if (display-graphic-p)

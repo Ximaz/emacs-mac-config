@@ -46,3 +46,5 @@
 (global-set-key (kbd "M-b") 'counsel-find-file)
 (global-set-key (kbd "M-j") 'pop-the-shell)
 (global-set-key (kbd "M-<delete>") 'kill-word) ;; Must work for fn + M + <delete>
+(global-set-key (kbd "M-f") 'swiper-isearch)
+
