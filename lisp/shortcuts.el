@@ -34,7 +34,6 @@
 
 (add-hook 'eshell-exit-hook #'close-eshell-window)
 
-
 ;; Define keyboard shortcuts
 (global-set-key (kbd "M-p") 'pop-to-buffer)
 (global-set-key (kbd "M-o") 'find-file)
@@ -46,3 +45,4 @@
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 (global-set-key (kbd "M-b") 'counsel-find-file)
 (global-set-key (kbd "M-j") 'pop-the-shell)
+(global-set-key (kbd "M-<delete>") 'kill-word) ;; Mus work for fn + M + <delete>
