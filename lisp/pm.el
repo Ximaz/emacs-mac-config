@@ -26,3 +26,6 @@
 (load "packages/ivy-rich.el")
 (load "packages/magit.el")
 (load "packages/wakatime.el")
+
+(when (eq system-type 'darwin)
+  (setq mac-command-modifier 'super))

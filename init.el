@@ -30,8 +30,10 @@
    '("5f128efd37c6a87cd4ad8e8b7f2afaba425425524a68133ac0efd87291d05874" "7a424478cb77a96af2c0f50cfb4e2a88647b3ccca225f8c650ed45b7f50d9525" "9b59e147dbbde5e638ea1cde5ec0a358d5f269d27bd2b893a0947c4a867e14c1" default))
  '(mouse-wheel-progressive-speed nil)
  '(package-selected-packages
-   '(wakatime-mode doom-themes multiple-cursors visual-fill-column org-bullets evil-collection magit evil-magit all-the-icons-dired all-the-icons sublime-themes helpful ivy-rich which-key rainbow-delimiters use-package doom-modeline counsel command-log-mode))
- '(show-paren-mode t))
+   '(buffer-move wakatime-mode doom-themes multiple-cursors visual-fill-column org-bullets evil-collection magit evil-magit all-the-icons-dired all-the-icons sublime-themes helpful ivy-rich which-key rainbow-delimiters use-package doom-modeline counsel command-log-mode))
+ '(show-paren-mode t)
+ '(wakatime-api-key "28e54a02-902a-4fe9-9868-840247f92e30")
+ '(wakatime-cli-path "/Users/user/Library/Python/3.8/bin/wakatime"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
